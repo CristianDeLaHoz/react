@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UFT-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--tag ceo-->
+   <meta name="keyboard" content="compra, tienda, tecnologia, pago">
+   <meta name="description" content="Carrito virtual para compra de tecnologia">
+
+<!--titulo-->
+  <title>TECNO NEUQUEN - Tienda Virtual de Tecnologia</title>
+
+<!--favicons-->
+  <link href="/multimedia/444294.png" rel="icon">
+
+<!--fuente-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+ 
+<!--javascript-->
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+ 
+<!--css-->
+ <link type="text/css" href="/css/main.css" rel="stylesheet" media="screen"/>
+ <link type="text/css" href="/css/navbar.css" rel="stylesheet" media="screen"/>
+</head>
+  
+<body>
+
+<!--navbar-->
+
+<nav class="navbar">
+  <a href="#" class="navbar__logo">TECNO NEUQUEN</a>
+  <ul class="navbar__menu">
+    <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+    <li class="navbar__item"><a href="#" class="navbar__link">Productos</a></li>
+    <li class="navbar__item"><a href="#" class="navbar__link">Ofertas</a></li>
+    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+  </ul>
+  <div class="navbar__cart">
+    <a href="#" class="navbar__cart-icon"><i class="fas fa-shopping-cart"></i></a>
+    <span class="navbar__cart-count">0</span>
+  </div>
+  <div class="navbar__toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<!--texto-->
+<div class="container">
+    <section id="Welcome">
+        <div class="welcome-container">
+          <h1>Bienvenidos a TECNO NEUQUEN!</h1>
+          <h2>Somos Lideres en ventas de tecnologia en el mercado.</h2>
+          <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+        </div>
+    </section>
+</div>
+
+ <div id="todo" class="todoNo">
+ <div id="menu" class="menuNo">
+  
+ <!--Producto del 1 al 9-->
+ <div id="div1" name="DIVS"></div>
+ <div id="div2" name="DIVS"></div>
+ <div id="div3" name="DIVS"></div>
+ <div id="div4" name="DIVS"></div>
+ <div id="div5" name="DIVS"></div>
+ <div id="div6" name="DIVS"></div>
+ <div id="div7" name="DIVS"></div>
+ <div id="div8" name="DIVS"></div>
+ <div id="div9" name="DIVS"></div>
+ 
+ 
+ <!--Botones de compra-->
+ <div id="divbotones">
+ <input type="button" id="botonTotal" value="Calcular total"/>
+ <input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+ <input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+ <input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+ </div>
+ 
+ 
+ <!--zona de compra, tablas, formularios, etc.-->
+ <div id="divZonaCompra" class="divZonaCompraNo">
+ 
+ 
+ <!--Carrito de la compra-->
+ <div id="divTotal" class="divsNo">
+ <p><b>Carrito de la compra, aun estas a tiempo de modificarlo!</b></p>
+ <table id="tablaTotal"></table>
+ </div>
+ 
+ 
+ <!--Datos personales--> 
+ <div id="divDatos" class="divsNo">
+ <p><b>Introduce tus datos personales:</b></p>
+ 
+ <div id="divDatosPersonales0">
+ <div id="divDatosPersonales1">
+ <label>Nombre completo:</label><br/>
+ <input type="text" id="nombre" value="" size="26" /><br/>
+ 
+ 
+ <label>DNI:</label><br/>
+ <input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+ 
+ 
+ <label>Fecha de nacimiento:</label><br/>
+
+ <select id="fechaNacimientoDia">
+ <option value=""> dia </option>
+ </select>
+
+ <select id="fechaNacimientoMes">
+ <option value="">      mes</option>
+ <option value="1">Enero</option>
+ <option value="2">Febrero</option>
+ <option value="3">Marzo</option>
+ <option value="4">Abril</option>
+ <option value="5">Mayo</option>
+ <option value="6">Junio</option>
+ <option value="7">Julio</option>
+ <option value="8">Agosto</option>
+ <option value="9">Septiembre</option>
+ <option value="10">Octubre</option>
+ <option value="11">Noviembre</option>
+ <option value="12">Diciembre</option>
+ </select> 
+
+ <select id="fechaNacimientoAnio">
+ <option value="">  año </option>
+ </select><br/>
+ </div>
+ 
+ <div id="divDatosPersonales2">
+ <label>Telefono:</label><br/>
+ <input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+ 
+ <label>Email:</label><br/>
+ <input type="text" id="email1" value="" size="25" /><br/>
+ 
+ <label>Repite tu email:</label><br/>
+ <input type="text" id="email2" value="" size="25" /> 
+ </div>
+ </div>
+ 
+ 
+ <div id="divDomicilio">
+ <label>Tipo de Calle</label>
+ <select id="tipoDeVia">
+ <option value="Avenida">Avenida</option>
+ <option value="Calle"selected="selected">Calle</option>
+ <option value="Camino">Camino</option>
+ <option value="Bloque">Carretera</option>
+ <option value="Cuadra">Pasaje</option>
+ <option value="Residencia">Residencia</option>
+ <option value="S/N">Urbanizacion</option>
+ </select>     
+ 
+ <label>Nombre via:</label>
+ <input type="text" id="viaNombre" value="" size="20" /><br/>
+ 
+ <label>Nº/km:</label>
+ <input type="text" id="viaNumero" value="" size="2" />  
+ 
+ <label>Bloque:</label>
+ <input type="text" id="viaBloque" value="" size="2" />         
+ 
+ <label>Piso:</label>
+ <input type="text" id="viaPiso" value="" size="2" /><br/>
+  
+ <label>Localidad:</label>
+ <input type="text" id="localidad" value="" size="13"/>  
+ 
+ <label>Codigo Postal:</label>
+ <input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+ 
+ <label>Provincia:</label>
+ <select id="provincia">
+ <option value="">          provincia</option>
+ <option value="15">Buenos Aires</option>
+ <option value="1">Catamarca</option>
+ <option value="2">Chaco</option>
+ <option value="3">Chubut</option>
+ <option value="4">Cordoba</option>
+ <option value="33">Corrientes</option>
+ <option value="5">Entre Rios</option>
+ <option value="6">Formosa</option>
+ <option value="7">Jujuy</option>
+ <option value="8">La Pampa</option>
+ <option value="9">La Rioja</option>
+ <option value="10">Mendoza</option>
+ <option value="11">Misiones</option>
+ <option value="39">Neuquen</option>
+ <option value="12">Rio Negro</option>
+ <option value="51">Salta</option>
+ <option value="13">San Juan</option>
+ <option value="14">San Luis</option>
+ <option value="16">Santa Cruz</option>
+ <option value="99">Santa Fe</option>
+ <option value="17">Santiago del Estero</option>
+ <option value="18">Tierra del Fuego</option>
+ <option value="19">Tucuman</option>
+ </select>
+ </div> 
+ </div> 
+  
+ <!--Datos de pago-->
+ <div id="divPago" class="divsNo">
+ <p><b>Introduce los datos de tu tarjeta de credito/debito:</b></p>
+ 
+ 
+ <label>Titular de la tarjeta:</label><br/>
+ <input type="text" id="titular" value="" size="26" /><br/>
+ 
+ 
+ <div id="metodosDePago">
+ <label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+ <label for="visa">
+ <input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+ </label>
+   
+ <label for="masterCard">
+ <input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+ </label>
+   
+ <label for="amex">
+ <input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+ </label>
+   
+  </div>
+ 
+ 
+ <div id="divNumeroTarjeta">
+ <label>Número tarjeta y codigo de seguridad:</label><br/>
+ <input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+ <input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+ 
+ 
+ <select id="mesTarjeta">
+ <option value="">  mes </option>
+ </select>
+ 
+ <select id="anioTarjeta">
+ <option value="">  año </option>
+ </select>
+</div>
+</div> 
+</div>
+</div> 
+</div>
+ 
+ </body>
+
+ <footer>
+     <h3>Gracias por visitarnos!</h4>
+ </footer>
+ 
+</html>
